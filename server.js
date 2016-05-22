@@ -169,6 +169,6 @@ app.get('/v1/getRandomQuestion', function(req,res){
 
 
 
-app.listen(3002, function(){
+app.listen(process.env.PORT || 3002, function(){
 	console.log('Listening on 3002');
 });
