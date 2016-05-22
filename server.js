@@ -9,9 +9,9 @@ var express = require('express'),
 	multer = require('multer');
 
 var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'rahul'
+  host     : process.env.HOST,
+  user     : process.env.USER,
+  password : process.env.PASSWORD
 });
 
 
